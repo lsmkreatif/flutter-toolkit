@@ -1,0 +1,21 @@
+module.exports = {
+  branches: ['master'],
+  plugins: [
+    '@semantic-release/commit-analyzer',
+    '@semantic-release/release-notes-generator',
+    '@semantic-release/changelog',
+    [
+      '@semantic-release/git',
+      {
+        assets: ['CHANGELOG.md', 'pubspec.yaml'],
+        message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
+      },
+    ],
+    [
+      '@semantic-release/exec',
+      {
+        prepareCmd: 'dart pub get && dart format . && dart pub upgrade && dart pub outdated',
+      },
+    ],
+  ],
+};

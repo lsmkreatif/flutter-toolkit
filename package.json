@@ -1,0 +1,28 @@
+{
+  "name": "flutter-toolkit",
+  "version": "0.3.3",
+  "description": "simple toolkit",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ariefsn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsmkreatif/flutter-toolkit/issues"
+  },
+  "homepage": "https://github.com/lsmkreatif/flutter-toolkit#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "semantic-release": "^24.2.6"
+  }
+}
